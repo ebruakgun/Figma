@@ -13,6 +13,7 @@
     />
     <title>HIGH QUALITY COURSES</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="school-actieve.css" />
   </head>
   <body>
@@ -76,20 +77,42 @@
     <section class="header pt-5">
       <div class="container pt-5">
         <div class="row mt-5 pt-5">
-          <div class="col-6 col-md-6 first-row mt-5">
-            <div class="videocontainer" class="hidden">
-              <video
-                id="myVideo"
-                width="400"
-                height="400"
-                poster="photos/col-md-6.svg"
-                controls>
-                <source
-                  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-                  type="video/mp4"/>
-                Your browser does not support the video tag.
-              </video>
-              <button id="closeVideo">X</button>
+          <div class="first-row col-6 col-md-6 mt-5">
+            <img
+              src="photos/media bg-cover.png"
+              class="img-fluid rounded"
+              alt="video photo"
+            />
+            <img
+              src="photos/circle.btn.png"
+              class="play-btn"
+              alt="play"
+              data-bs-toggle="modal"
+              data-bs-target="#videoModal"
+            />
+            <!-- Video Modal -->
+            <div
+              id="videoModal"
+              class="modal fade"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                      <video id="myVideo" controls>
+                        <source
+                          src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-6">
@@ -100,14 +123,329 @@
               the two major realms of Classical physics: <br />
               Newtonian mechanics
             </p>
-            <a href="#" class="learnmore align-items-center"
-              >Learn More
-              <span class="learnmore-1 align-items-center">&gt;</span></a
-            >
+            <div class="align-items-center">
+              <a class="learnmore" href="#learn more"
+                >Learn More <span class="learnmore-1">&#8250;</span></a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Popular Courses Section -->
+    <div class="header">
+      <div class="col-md-6">
+        <span class="short-red-line"></span>
+        <h2>Our Popular Courses</h2>
+        <p class="paragraph">
+          Problems trying to resolve the conflict between <br />
+          the two major realms of Classical physics: <br />
+          Newtonian mechanics
+        </p>
+        <div class="align-items-center">
+          <a class="learnmore" href="#learn more"
+            >Learn More <span class="learnmore-1">&#8250;</span></a
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-3">
+          <img src="photos/tc-card.png" alt="" />
+          <img src="photos/card.png" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img src="photos/b-l card.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Watch Our Courses -->
+    <section class="header pt-5">
+      <div class="container pt-5">
+        <div class="row mt-5 pt-5">
+          <div class="first-row col-6 col-md-6 mt-5">
+            <img
+              src="photos/thumb-concept.png"
+              class="img-fluid rounded"
+              alt="photo"
+            />
+          </div>
+          <div class="col-6 col-md-6">
+            <span class="short-red-line"></span>
+            <h2>Watch our Courses</h2>
+            <p class="paragraph">
+              Problems trying to resolve the conflict between <br />
+              the two major realms of Classical physics: <br />
+              Newtonian mechanics
+            </p>
+            <div class="align-items-center">
+              <a class="learnmore" href="#learn more"
+                >Learn More <span class="learnmore-1">&#8250;</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel slider-->
+    <div class="container px-5">
+      <div id="carouselExample" class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 2</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 3</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 4</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 5</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 6</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 7</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 8</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Card title 9</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
     <footer></footer>
     <script type="module" src="school-active.js"></script>
